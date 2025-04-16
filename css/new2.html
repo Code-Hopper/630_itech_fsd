@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- gradient color -->
+
+    <style>
+        body {
+            /* height: 100vh; */
+            /* background: linear-gradient(0deg,red 25%,blue 25%, green 75%, yellow); */
+            /* background: linear-gradient(45deg, red 50%, blue 50%); */
+
+            /* background: repeating-linear-gradient(red , red 1px, white 2px); */
+
+            /* background: repeating-linear-gradient(45deg,black,black, white 20px),  repeating-linear-gradient(145deg,black,black, white 20px); */
+
+            /* css methods */
+            /* functions */
+            /* linear-gradient( direction, color1 composition, color2 composition, ..... ),
+            conic-gradient(),
+            radial-graident() */
+
+            /* background: conic-gradient(red 80% ,blue 50%); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: radial-gradient(red,blue,green,yellow);
+
+            background: repeating-radial-gradient(red,blue 20px);
+
+        }
+
+        .loading{
+            background: conic-gradient(red ,blue );
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            position: relative;
+            z-index: 1;
+            animation-name: spin;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .loading::after{
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            left: 50%;
+            top: 50%;
+            background-color: white;
+            border-radius: 100%;
+            transform: translate(-50%,-50%);
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="loading"></div> -->
+
+</body>
+
+</html>
