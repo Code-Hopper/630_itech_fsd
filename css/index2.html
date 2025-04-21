@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            font-size: 20px;
+            /* 1rem = 20px */
+            /* 10rem = 200px */
+        }
+
+        /*  smallest and static */
+
+        #element1 {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+
+        #element4 {
+            width: 25rem;
+            height: 500px;
+            background-color: blue;
+
+            font-size: 5px;
+
+            /* 1em = 5px */
+
+            /* 10em = 50px */
+
+        }
+
+        #element5{
+            width: 25em;
+            height: 10rem;
+            background: orange;
+        }
+
+        #element2 {
+            width: 50%;
+            height: 50%;
+            background-color: yellow;
+        }
+
+        /* vh and vw (viewport) */
+
+        /* 100vw x 100vh  */
+
+        /* vh and vw are calculated based on window(screen) */
+
+        #element3 {
+            width: 50vw;
+            height: 50vh;
+            background-color: black;
+        }
+
+        /* em , rem (custom units) */
+
+        /* font-size */
+
+        /* 1rem = 1em = 16px */
+
+        /* html & :root are the same element */
+    </style>
+
+</head>
+
+<body>
+
+    <h1>this is some text element1</h1>
+    <h2>this is some text element2</h2>
+    <h3>this is some text element3</h3>
+    <h4>this is some text element4</h4>
+
+    <!-- BODY  HEIGHT = 0  -->
+
+    <div id="element1">
+        <div id="element2"></div>
+    </div>
+
+    <div id="element4">
+        <div id="element5"></div>
+    </div>
+
+    <div id="element3"></div>
+
+
+    <!-- W x H -->
+
+    <!-- px % vh vw em rem -->
+
+</body>
+
+</html>
