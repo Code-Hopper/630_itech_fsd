@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #element1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            font-size: 1.5rem;
+            /* padding: 1rem; */
+            display: inline;
+
+            /* none, inline, block, inline-block, [ layouts flex and grid ] */
+
+            /* initial, inherit */
+        }
+
+        span {
+            display: inherit;
+            /* there display will be changed to block */
+            /* because they inherit display value from parent element  */
+        }
+
+        #element2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            font-size: 1.5rem;
+
+            display: inline;
+        }
+
+        #element3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            font-size: 1.5rem;
+
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="element1">
+        <span>Element 1</span>
+        <span>Element 1</span>
+    </div>
+    <div id="element2">
+        <span>Element 2</span>
+        <span>Element 2</span>
+    </div>
+
+    <div id="element3">
+        <span>Element 3</span>
+        <span>Element 3</span>
+    </div>
+
+    <!-- display: none we have hide (removed from canvas) our element  -->
+
+    <!-- display:inline the element will allow other elements to be in same row but will not support any external height and width -->
+
+    <!-- display:block the element will not allow other elements to be in same row but will support any external height and width -->
+
+    <!-- display: inline-block will allow other in same row and also supports external height and width-->
+
+</body>
+
+</html>
