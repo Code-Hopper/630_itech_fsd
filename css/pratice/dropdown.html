@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown-container {
+            width: 400px;
+            border: 2px solid black;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .dropdown-trigger {
+            padding: 1rem;
+            font-weight: bold;
+        }
+
+        .dropdown-target{
+            display: none;
+        }
+
+        .dropdown-target>ul {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: white;
+        }
+
+        .dropdown-container:hover > .dropdown-target{
+            display: block;   
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="dropdown-container">
+        <button class="dropdown-trigger">open dropdown</button>
+        <div class="dropdown-target">
+            <ul>
+                <li>dropdown item 1</li>
+                <li>dropdown item 2</li>
+                <li>dropdown item 3</li>
+                <li>dropdown item 4</li>
+                <li>dropdown item 5</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
