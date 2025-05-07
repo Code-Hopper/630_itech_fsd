@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 2rem auto;
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 1rem;
+        }
+
+        .child-1~.child-2 {
+            background-color: green;
+        }
+
+
+        .child-1+.child-2 {
+            background-color: blue;
+        }
+
+
+        /* :nth-child */
+
+        div:nth-child(1) {
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        div:nth-child(1):hover{
+            background-color: purple;
+        }
+
+        .lists {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 5rem;
+        }
+
+        li:nth-child(1){
+            color: red;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        li:hover{
+            color: yellow;
+        }
+
+        .first:hover{
+            background-color: red;
+        }
+
+        /* psuedo */
+
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="lists">
+
+        <ul>
+            <li>list irem 1</li>
+            <li>list irem 2</li>
+            <li>list irem 3</li>
+            <li>list irem 4</li>
+        </ul>
+
+        <ul>
+            <li>list irem 1</li>
+            <li>list irem 2</li>
+            <li>list irem 3</li>
+            <li>list irem 4</li>
+        </ul>
+
+        <ul class="first">
+            <li>list irem 1</li>
+            <li>list irem 2</li>
+            <li>list irem 3</li>
+            <li>list irem 4</li>
+        </ul>
+
+        <ul>
+            <li>list irem 1</li>
+            <li>list irem 2</li>
+            <li>list irem 3</li>
+            <li>list irem 4</li>
+        </ul>
+
+    </div>
+
+    <div class="parent">
+
+        <div class="child child-1"></div>
+        <div class="child child-2"></div>
+
+    </div>
+
+    <div class="child child-1"></div>
+
+    <h1>this is some heading</h1>
+
+    <div>
+
+        <div class="child child-2"></div>
+
+        <div class="child child-2"></div>
+
+    </div>
+
+    
+
+</body>
+
+</html>
