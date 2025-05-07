@@ -24,7 +24,7 @@
             font-weight: bold;
         }
 
-        .dropdown-target{
+        .dropdown-target {
             display: none;
         }
 
@@ -36,10 +36,35 @@
             color: white;
         }
 
-        .dropdown-container:hover > .dropdown-target{
-            display: block;   
+        .dropdown-container:hover>.dropdown-target {
+            display: block;
         }
 
+        /* media query */
+
+        @media screen and (max-width : 576px) {
+
+            body {
+                background-color: red;
+            }
+
+        }
+
+        @media screen and (min-width : 576px) and (max-width : 900px) {
+
+            body {
+                background-color: yellow;
+            }
+
+        }
+
+        @media screen and (min-width : 990px) {
+
+            body {
+                background-color: aqua;
+            }
+
+        }
     </style>
 
 </head>
