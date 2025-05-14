@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #element {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* transition-property: background-color width; */
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 3s; */
+
+            /* transition: all 0.5s ease; */
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        #element:hover {
+            width: 500px;
+            background-color: red;
+            left: 0;
+        }
+/* 
+        .parent:hover > #element {
+            width: 500px;
+            background-color: red;
+            visibility: visible;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div id="element">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

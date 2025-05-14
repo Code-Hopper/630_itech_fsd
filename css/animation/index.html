@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .element {
+            width: 200px;
+            height: 100px;
+            margin: 1rem 0;
+            padding: 1rem;
+            box-sizing: border-box;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+
+        .element1 {
+            animation: animation1 5s linear infinite;
+        }
+
+        .element2 {
+            animation: animation1 5s ease-in infinite;
+        }
+
+        .element3 {
+            animation: animation1 5s ease-out infinite;
+        }
+
+
+        .element4 {
+            animation: animation1 5s ease-in-out infinite;
+        }
+
+        .element5 {
+            animation: animation1 5s steps(10) infinite;
+        }
+
+        .element6 {
+            animation: animation1 5s cubic-bezier(.32,.89,1,-0.62) infinite;
+        }
+
+        @keyframes animation1 {
+
+            0% {
+                left: 0;
+            }
+
+            50% {
+                left: 100%;
+            }
+
+            100% {
+                left: 0;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="element element1">linear</div>
+    <div class="element element2">ease-in</div>
+    <div class="element element3">ease-out</div>
+    <div class="element element4">ease-in-out</div>
+    <div class="element element5">steps</div>
+    <div class="element element6">custom</div>
+
+</body>
+
+</html>
