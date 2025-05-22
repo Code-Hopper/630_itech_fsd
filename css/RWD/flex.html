@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .layout {
+            width: 100%;
+            border: 1px solid black;
+            height: 500px;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .child {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width:576px) {
+            .layout {
+                width: 100%;
+                border: 1px solid black;
+                height: 500px;
+                display: flex;
+                gap: 2rem;
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="child-1 child">child-1</div>
+        <div class="child-2 child">child-2</div>
+    </div>
+
+</body>
+
+</html>
